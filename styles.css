@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #1a1a1a; 
+  color: #fff; 
+}
+
+.container {
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 5px;
+  margin-bottom: 20px;
+  margin-top: 20px; 
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #333; 
+  border: 1px solid #555; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: #555; 
+}
+
+.status {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.9); 
+  color: #fff; 
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 9999;
+}
+
+.winner-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.winner-list li {
+  margin-bottom: 5px;
+}
+
+      
